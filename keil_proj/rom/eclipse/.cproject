@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.arm.eclipse.build.config.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2.1240518533">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.arm.eclipse.build.config.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2.1240518533" moduleId="org.eclipse.cdt.core.settings" name="build-rom">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.arm.eclipse.builder.armcc.error" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="ROM" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="clean" description="" id="com.arm.eclipse.build.config.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2.1240518533" name="build-rom" parent="com.arm.eclipse.build.config.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2">
+					<folderInfo id="com.arm.eclipse.build.config.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2.1240518533." name="/" resourcePath="">
+						<toolChain id="com.arm.toolchain.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2.1962476730" name="ARM Compiler 5.04u2" superClass="com.arm.toolchain.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2">
+							<targetPlatform id="com.arm.eclipse.build.config.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2.1240518533..1033884206" name=""/>
+							<builder buildPath="${workspace_loc:/BumbleBee3}/Debug" id="com.arm.toolchain.baremetal.builder.1297427904" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.arm.toolchain.baremetal.builder"/>
+							<tool id="com.arm.tool.c.compiler.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2.139236195" name="ARM C Compiler 5.4.2" superClass="com.arm.tool.c.compiler.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2">
+								<option defaultValue="com.arm.tool.c.compiler.option.optlevel.min" id="com.arm.tool.c.compiler.baremetal.exe.debug.base.option.opt.base.var.arm_compiler_5-5.4.2.520418912" name="Optimization level" superClass="com.arm.tool.c.compiler.baremetal.exe.debug.base.option.opt.base.var.arm_compiler_5-5.4.2" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.option.incpath.1406741063" name="Include path (-I)" superClass="com.arm.tool.c.compiler.option.incpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../os/freertos/inc"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../os/freertos/src/portable/MemMang"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../os/osif/inc"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../patch/inc"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../platform/cmsis/cm4"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../platform/cmsis/rtl876x/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../platform/inc"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../platform/inc_internal"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../peripheral/inc"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/utils/logger/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform_al/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/os_al/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/os/mint_os/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/config"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/export"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/core/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/core/hci/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/core/hci_td/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/core/baseband/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/core/lc/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/core/lmp/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/core/auth"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/core/utils"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/utils/crypto"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/utils/debug"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/vendor/hci/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/vendor/lmp/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/vendor/pta/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/vendor/plc/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/vendor/fm/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/vendor/tv/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/core/ll/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/core/bt_3dd/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/core/secure_conn/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/core/mws/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/btcontroller/core/phy_init/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform/S3C2410/export"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform/S3C2410/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform/S3C2410/4181/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform/S3C2410/baseband/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform/S3C2410/gpio/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform/S3C2410/otp/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform/S3C2410/timer/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform/S3C2410/uart/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform/S3C2410/efuse/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform/S3C2410/dma/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform/S3C2410/mailbox/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform/S3C2410/power_control/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform/S3C2410/spi/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform/S3C2410/new_io/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform/S3C2410/scoreboard/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform/S3C2410/system_on/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/low/platform/S3C2410/i2c/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/upper/inc"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/upper/src/bt/btcore"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../../stack/upper/src/bt/blueapi"/>
+								</option>
+								<option id="com.arm.tool.c.compiler.option.preinc.1640557358" name="Preinclude (--preinclude)" superClass="com.arm.tool.c.compiler.option.preinc" valueType="includeFiles">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/inc_internal/lowerstack_defines.h}&quot;"/>
+								</option>
+								<option id="com.arm.tool.c.compiler.option.targetcpu.526130007" name="Target CPU (--cpu)" superClass="com.arm.tool.c.compiler.option.targetcpu" value="Cortex-M4.fp" valueType="string"/>
+								<option id="com.arm.tool.c.compiler.option.endian.1392332325" name="Byte order" superClass="com.arm.tool.c.compiler.option.endian" value="com.arm.tool.c.compiler.option.endian.little" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.option.inter.755820183" name="Interworking (--apcs=/interwork)" superClass="com.arm.tool.c.compiler.option.inter" value="true" valueType="boolean"/>
+								<option id="com.arm.tool.c.compiler.option.gnu.228375274" name="Enable GNU extensions (--gnu)" superClass="com.arm.tool.c.compiler.option.gnu" value="true" valueType="boolean"/>
+								<option id="com.arm.tool.c.compile.option.lang.991363650" name="Source language mode" superClass="com.arm.tool.c.compile.option.lang" value="com.arm.tool.c.compile.option.lang.c99" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.option.flags.861384136" name="Other flags" superClass="com.arm.tool.c.compiler.option.flags" value="--bss_threshold=0" valueType="string"/>
+								<option id="com.arm.tool.c.compiler.option.suppress.597108718" name="Suppress (--diag_suppress)" superClass="com.arm.tool.c.compiler.option.suppress" value="1295" valueType="string"/>
+								<inputType id="com.arm.tool.c.compiler.input.209946082" superClass="com.arm.tool.c.compiler.input"/>
+								<inputType id="com.arm.tool.cpp.compiler.input.2013993869" superClass="com.arm.tool.cpp.compiler.input"/>
+							</tool>
+							<tool id="com.arm.tool.cpp.compiler.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2.855401201" name="ARM C++ Compiler 5.4.2" superClass="com.arm.tool.cpp.compiler.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2">
+								<option defaultValue="com.arm.tool.c.compiler.option.optlevel.min" id="com.arm.tool.cpp.compiler.baremetal.exe.debug.base.option.opt.base.var.arm_compiler_5-5.4.2.1083173657" name="Optimization level" superClass="com.arm.tool.cpp.compiler.baremetal.exe.debug.base.option.opt.base.var.arm_compiler_5-5.4.2" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.option.preinc.782388944" name="Preinclude (--preinclude)" superClass="com.arm.tool.c.compiler.option.preinc" valueType="includeFiles">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/platform/inc_internal/lowerstack_defines.h}&quot;"/>
+								</option>
+								<option id="com.arm.tool.c.compiler.option.incpath.1480584799" name="Include path (-I)" superClass="com.arm.tool.c.compiler.option.incpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../os/freertos/inc"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../os/freertos/src/portable/MemMang"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../patch/inc"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../platform/cmsis/cm4"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../platform/cmsis/rtl876x/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../platform/inc"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../platform/inc_internal"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../peripheral/inc"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/utils/logger/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform_al/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/os_al/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/os/mint_os/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/config"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/config/core"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/export"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/core/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/core/hci/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/core/hci_td/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/core/baseband/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/core/lc/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/core/lmp/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/core/auth"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/core/utils"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/utils/crypto"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/utils/debug"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/vendor/hci/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/vendor/lmp/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/vendor/pta/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/vendor/plc/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/vendor/fm/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/vendor/tv/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/core/ll/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/core/bt_3dd/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/core/secure_conn/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/core/mws/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/btcontroller/core/phy_init/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform/S3C2410/export"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform/S3C2410/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform/S3C2410/4181/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform/S3C2410/baseband/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform/S3C2410/gpio/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform/S3C2410/otp/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform/S3C2410/timer/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform/S3C2410/uart/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform/S3C2410/efuse/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform/S3C2410/dma/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform/S3C2410/mailbox/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform/S3C2410/power_control/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform/S3C2410/spi/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform/S3C2410/new_io/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform/S3C2410/scoreboard/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform/S3C2410/system_on/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/low/platform/S3C2410/i2c/include"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/upper/inc"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/upper/src/bt/btcore"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/osif/inc"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/upper/src/bt/app/blueapi"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/../../stack/upper/src/bt/app/blueapi/osif"/>
+								</option>
+								<option id="com.arm.tool.c.compiler.option.targetcpu.290881029" name="Target CPU (--cpu)" superClass="com.arm.tool.c.compiler.option.targetcpu" value="Cortex-M4.fp" valueType="string"/>
+								<option id="com.arm.tool.c.compiler.option.endian.846612430" name="Byte order" superClass="com.arm.tool.c.compiler.option.endian" value="com.arm.tool.c.compiler.option.endian.little" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.option.inter.1311395355" name="Interworking (--apcs=/interwork)" superClass="com.arm.tool.c.compiler.option.inter" value="true" valueType="boolean"/>
+								<option id="com.arm.tool.c.compiler.option.gnu.1474000086" name="Enable GNU extensions (--gnu)" superClass="com.arm.tool.c.compiler.option.gnu" value="true" valueType="boolean"/>
+								<option id="com.arm.tool.cpp.compiler.option.lang.635474252" name="Source language mode" superClass="com.arm.tool.cpp.compiler.option.lang" value="com.arm.tool.c.compile.option.lang.c99" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.option.flags.193543641" name="Other flags" superClass="com.arm.tool.c.compiler.option.flags" value="--bss_threshold=0" valueType="string"/>
+								<option id="com.arm.tool.c.compiler.option.suppress.177096106" name="Suppress (--diag_suppress)" superClass="com.arm.tool.c.compiler.option.suppress" value="1295" valueType="string"/>
+							</tool>
+							<tool id="com.arm.tool.assembler.base.var.arm_compiler_5-5.4.2.265881163" name="ARM Assembler 5.4.2" superClass="com.arm.tool.assembler.base.var.arm_compiler_5-5.4.2">
+								<option id="com.arm.tool.assembler.option.cpu.1232163405" name="Target CPU (--cpu)" superClass="com.arm.tool.assembler.option.cpu" value="Cortex-M4.fp" valueType="string"/>
+								<option id="com.arm.tool.assembler.option.endian.114038181" name="Byte order" superClass="com.arm.tool.assembler.option.endian" value="com.arm.tool.c.compiler.option.endian.little" valueType="enumerated"/>
+								<option id="com.arm.tool.assembler.option.inst.1477026755" name="Instruction set" superClass="com.arm.tool.assembler.option.inst" value="com.arm.tool.c.compiler.option.inst.thumb" valueType="enumerated"/>
+								<option id="com.arm.tool.assembler.option.inter.64932086" name="Interworking (--apcs=/interwork)" superClass="com.arm.tool.assembler.option.inter" value="true" valueType="boolean"/>
+								<option id="com.arm.tool.assembler.option.preproc.1524761096" name="Preprocess input before assembling (--cpreproc)" superClass="com.arm.tool.assembler.option.preproc" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="com.arm.tool.c.linker.base.var.arm_compiler_5-5.4.2.966028126" name="ARM Linker 5.4.2" superClass="com.arm.tool.c.linker.base.var.arm_compiler_5-5.4.2">
+								<option id="com.arm.tool.c.linker.option.cpu.454987377" name="Target CPU (--cpu)" superClass="com.arm.tool.c.linker.option.cpu" value="Cortex-M4.fp" valueType="string"/>
+								<option id="com.arm.tool.c.linker.option.robase.1832398743" name="RO base address (--ro_base)" superClass="com.arm.tool.c.linker.option.robase" value="" valueType="string"/>
+								<option id="com.arm.tool.c.linker.option.rwbase.1410710563" name="RW base address (--rw_base)" superClass="com.arm.tool.c.linker.option.rwbase" value="" valueType="string"/>
+								<option id="com.arm.tool.c.linker.option.scatter.27352122" name="Scatter file (--scatter)" superClass="com.arm.tool.c.linker.option.scatter" value="${ProjDirPath}/../BB3.sct" valueType="string"/>
+								<option id="com.arm.tool.c.linker.option.imagemap.505774503" name="Generate image map (--map)" superClass="com.arm.tool.c.linker.option.imagemap" value="false" valueType="boolean"/>
+								<option id="com.arm.tool.c.linker.option.flags.1783055794" name="Other flags" superClass="com.arm.tool.c.linker.option.flags" value="--strict --symdefs=&quot;${ProjDirPath}/../../symboltable.lib&quot; --edit &quot;${ProjDirPath}/../steering.txt&quot;  --datacompressor off" valueType="string"/>
+								<option id="com.arm.tool.c.linker.option.totals.2028518940" name="List total code and data sizes of output image (--info=totals)" superClass="com.arm.tool.c.linker.option.totals" value="true" valueType="boolean"/>
+								<option id="com.arm.tool.c.linker.option.elim.942360550" name="List unused sections that are eliminated (--info=unused)" superClass="com.arm.tool.c.linker.option.elim" value="true" valueType="boolean"/>
+								<option id="com.arm.tool.c.linker.option.redirectoutput.776624089" name="Redirect diagnostics output to file (--list)" superClass="com.arm.tool.c.linker.option.redirectoutput" value="ROM.map" valueType="string"/>
+							</tool>
+							<tool id="com.arm.tool.librarian.base.var.arm_compiler_5-5.4.2.448413984" name="ARM Librarian 5.4.2" superClass="com.arm.tool.librarian.base.var.arm_compiler_5-5.4.2"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="BumbleBee3.com.arm.eclipse.build.project.baremetal.exe.base.var.arm_compiler_5-5.4.2.2048944965" name="Executable" projectType="com.arm.eclipse.build.project.baremetal.exe.base.var.arm_compiler_5-5.4.2"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="build-rom"/>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/BumbleBee3"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/BumbleBee3"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.arm.eclipse.build.config.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2.1240518533;com.arm.eclipse.build.config.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2.1240518533.;com.arm.tool.c.compiler.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2.139236195;com.arm.tool.cpp.compiler.input.2013993869">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arm.eclipse.builder.armcc.ARMCompilerDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arm.eclipse.build.config.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2.1240518533;com.arm.eclipse.build.config.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2.1240518533.;com.arm.tool.c.compiler.baremetal.exe.debug.base.var.arm_compiler_5-5.4.2.139236195;com.arm.tool.c.compiler.input.209946082">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arm.eclipse.builder.armcc.ARMCompilerDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arm.eclipse.build.config.baremetal.exe.release.base.var.arm_compiler_5-5.4.2.706785487;com.arm.eclipse.build.config.baremetal.exe.release.base.var.arm_compiler_5-5.4.2.706785487.;com.arm.tool.c.compiler.baremetal.exe.release.base.var.arm_compiler_5-5.4.2.893375837;com.arm.tool.c.compiler.input.728946573">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arm.eclipse.builder.armcc.ARMCompilerDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.arm.eclipse.build.config.baremetal.exe.release.base.var.arm_compiler_5-5.4.2.706785487;com.arm.eclipse.build.config.baremetal.exe.release.base.var.arm_compiler_5-5.4.2.706785487.;com.arm.tool.c.compiler.baremetal.exe.release.base.var.arm_compiler_5-5.4.2.893375837;com.arm.tool.cpp.compiler.input.1225830783">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.arm.eclipse.builder.armcc.ARMCompilerDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>

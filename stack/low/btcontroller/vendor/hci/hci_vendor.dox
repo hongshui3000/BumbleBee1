@@ -1,0 +1,75 @@
+/**
+@defgroup HCIVendor  HCI Vendor Interface
+
+Vendor customed commands and events.
+*/
+
+/**
+@page HCIVendorList  HCI Vendor Command/Event List
+
+@section HCIVendorFMList FM Vendor Commands
+
+@subsection HCIVendorFMSwitch FM Switch State
+
+Command              | OCF    | Command Parameters | Return Parameters
+---------------------|--------|--------------------|------------------
+HCI_VENDOR_FM_SWITCH | 0x0085 | state              | Status
+
+Total length of command parameters: 1 octets.
+
+Command parameters:
+-   state (1 octet): The state of FM (0: off; 1: on).
+
+Return parameters:
+-   Status (1 octet): 0x00 if succeeded. Otherwise, failed.
+
+@subsection HCIVendorFMRead FM Read Data
+
+Command              | OCF    | Command Parameters | Return Parameters
+---------------------|--------|--------------------|------------------
+HCI_VENDOR_FM_READ   | 0x0086 | addr\n len         | Status\n data[len]
+
+Total length of command parameters: 3 octets
+
+Command parameters:
+-   addr (2 octets): The FM register address (in Little Endian).
+-   len (1 octet): The number of octets to read (<= 251).
+
+Return parameters:
+-   Status (1 octet): 0x00 if succeeded. Otherwise, failed.
+    -   0x12 (Invalid HCI Command Parameters) if len > 251.
+-   data[len] (len octets): Data in sequential octet order.
+
+@subsection HCIVendorFMWrite FM Write Data
+
+Command              | OCF    | Command Parameters | Return Parameters
+---------------------|--------|--------------------|------------------
+HCI_VENDOR_FM_WRITE  | 0x0087 | addr\n data[N]     | Status
+
+Total length of command parameters: 2 + N octets
+
+Command parameters:
+-   addr (2 octets): The FM register address (in Little Endian).
+-   data (N octets): The data to write in sequential octet order (1 <= N <= 253).
+
+@subsection HCIVendorFMSet FM Set Data
+
+Command              | OCF    | Command Parameters | Return Parameters
+---------------------|--------|--------------------|------------------
+HCI_VENDOR_FM_SET    | 0x0088 | addr\n mask\n val  | Status
+
+Total length of command parameters: 4/6/10 octets
+
+Command parameters:
+-   addr (2 octets): The FM register address (in Little Endian).
+-   mask (1/2/4 octets): The bitmap indicating which bits to change values
+    (0: not; 1: change).
+-   val (1/2/4 octets): The value to be set. Only bits of value corresponding
+    to 1 in the bitmap will be used.
+
+Return parameters:
+-   Status: 0x00 if succeeded. Otherwise, failed.
+    -   0x12 (Invalid HCI Command Parameters) if the size of mask or val is
+        incorrect.
+
+*/

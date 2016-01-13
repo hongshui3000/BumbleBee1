@@ -1,0 +1,84 @@
+
+
+#if !defined(__PATHC_UPPERSTACK_H)
+#define __PATHC_UPPERSTACK_H
+
+
+
+
+
+
+
+//Upper Stack reinit patch function pointer
+extern VoidPatchFun pPatch_UpperStack_init;
+extern VoidPatchFun pPatch_UpperStack_reinit;
+
+extern BOOLPatchFun pPatch_upper_stack_blueAPI_PutMessage;
+extern U32PatchFun pPatch_upper_stack_osMessageSend;
+extern U32PatchFun pPatch_upper_stack_osMessageReceive;
+extern U32PatchFun pPatch_upper_stack_osBufferGet;
+extern U32PatchFun pPatch_upper_stack_osBufferRelease;
+extern BOOLPatchFun pPatch_upper_stack_blueAPI_UserDefined;
+
+
+
+
+extern U32PatchFun pPatch_upper_stack_blueFacePutMessage;
+extern BOOLPatchFun pPatch_upper_stack_blueAPI_AppPoolInit;
+extern U16PatchFun  pPatch_upper_stack_blueAPI_AppPoolCreate;
+extern BOOLPatchFun pPatch_upper_stack_blueAPI_AppPoolExtend;
+extern PVOIDPatchFun pPatch_upper_stack_blueAPI_AppBufferAlloc;
+extern VoidPatchFun   pPatch_upper_stack_blueAPI_AppBufferRelease;
+
+
+
+
+extern BOOLPatchFun  pPatch_upper_stack_blueAPI_HciInterfaceInit;
+extern BOOLPatchFun  pPatch_upper_stack_blueAPI_SendHciComamand;
+
+extern PVOIDPatchFun pPatch_upper_stack_blueAPI_CmdBufferGet;
+extern VoidPatchFun  pPatch_upper_stack_blueAPI_CmdBufferRelease;
+extern VoidPatchFun  pPatch_upper_stack_blueAPI_EvtBufferRelease;
+
+
+//patch function pointer used for replace some switch case processing.
+extern BOOLPatchFun pPatch_upper_stack_dfu_HandleBlueAPIMessage;
+
+extern BOOLPatchFun pPatch_upper_stack_blueAPI_BTCallBack;
+extern BOOLPatchFun pPatch_upper_stack_blueAPI_Handle_Command;
+extern BOOLPatchFun pPatch_upper_stack_blueFaceEntry_Handle_Command;
+extern BOOLPatchFun pPatch_upper_stack_blueFaceHandleGATTDownSideMessage;
+extern BOOLPatchFun pPatch_upper_stack_blueFaceHandleGATTUpSideMessage;
+extern BOOLPatchFun pPatch_upper_stack_blueFaceHandlePhDataReq;
+extern BOOLPatchFun pPatch_upper_stack_gattHandleMessage;
+extern BOOLPatchFun pPatch_upper_stack_hciLEProcessEventPacket;
+extern BOOLPatchFun pPatch_upper_stack_hciProcessEventPacket;
+extern BOOLPatchFun pPatch_upper_stack_gattHandleLE_MESSAGE_CONF;
+extern BOOLPatchFun pPatch_upper_stack_gattHandleLE_MESSAGE_IND;
+extern BOOLPatchFun pPatch_upper_stack_l2cEntry;
+extern BOOLPatchFun pPatch_upper_stack_hciHandleMessage;
+extern BOOLPatchFun pPatch_upper_stack_btsmHandleMessage;
+extern BOOLPatchFun pPatch_upper_stack_btsmHandleLE_MESSAGE_REQ;
+extern BOOLPatchFun pPatch_upper_stack_btsmHandleLE_MESSAGE_CONF;
+extern BOOLPatchFun pPatch_upper_stack_btsmHandleLE_MESSAGE_IND;
+extern BOOLPatchFun pPatch_upper_stack_l2cHandleSigCmd;
+extern VoidPatchFun pPatch_upper_stack_l2cFragmentLEData;
+extern BOOLPatchFun pPatch_upper_stack_attDataReceived;
+extern VoidPatchFun pPatch_upper_stack_l2cFragmentDATA_REQ;
+extern VoidPatchFun pPatch_upper_stack_l2cChanRelease;
+extern VoidPatchFun pPatch_upper_stack_l2cSendL2CAPMessage;
+extern BOOLPatchFun pPatch_upper_stack_l2cChangeState;
+extern BOOLPatchFun pPatch_upper_stack_hciLLApiHandleDataIndication;
+extern VoidPatchFun pPatch_upper_stack_l2cHandleUpstreamLEFrame;
+
+extern BOOLPatchFun pPatch_upper_stack_blueAPI_TgtSendEvent;
+
+extern BOOLPatchFun  pPatch_upper_stack_dlps_enter;
+extern BOOLPatchFun  pPatch_upper_stack_dlps_exit;
+extern BOOLPatchFun  pPatch_upper_stack_dlps_check;
+
+extern VoidPatchFun pPatch_dfuInit;
+extern BOOLPatchFun pPatch_dfu_timer_init;
+
+#endif
+

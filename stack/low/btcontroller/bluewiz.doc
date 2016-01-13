@@ -1,0 +1,23 @@
+/** \mainpage BlueWiz2.1 + EDR Firmware Implementation Document
+<h2> Introduction </h2>
+<p>Bluetooth is a short-range radio link intended to replace the cable-connected
+portable and/or fixed electronic devices. The Bluetooth architecture, as
+standardized by the Bluetooth SIG defines HCI-LMP and Link Control firmware
+on top of the baseband link control hardware.</p>
+
+<p>This document is intended as a API reference for BlueWiz Firmware
+implementation. The firmware is divided into the following modules:</p>
+
+<ul>
+<li> \ref hci - HCI reference
+<li> \ref lmp - LMP reference
+<li> \ref lc - LC reference
+<li> \ref bb_driver - BB Driver reference
+<li> \ref hci_td - HCI TD reference
+<li> \ref bz_ref_platform - Platform Abstraction reference
+<li> \ref bz_utils - Utilities reference
+<li> \ref mint_os - MINT OS reference
+</ul>
+
+
+*/
